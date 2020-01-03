@@ -1,13 +1,16 @@
-## javascript设计模式学习记录
-### 1. 搭建开发环境
-```
-npm init -y # npm初始化
-npm install webpack webpack-cli --save-dev # 安装webpack webpack-cli
-npm install webpack-dev-server html-webpack-plugin --save-dev # 安装webpack-dev-server webpackPlugin:html-webpack-plugin
 
-```
+# javascript-learn-notes
+js学习记录，精心整理的博客
+
+## js基础语法
+[for...in 和 for...of 的区别 -javascript](https://segmentfault.com/a/1190000021415613)
+
+## ES语法
+[理解 JavaScript 的 async/await](https://segmentfault.com/a/1190000007535316)
 
 
----
-## error-note
-1. vscode开两个终端server？报ELIFECYCLE生命周期错误？ bug都是自找的
+## js原型链和闭包(强烈推荐，两篇足以)
+[深入理解javascript原型和闭包（完结）](https://www.cnblogs.com/wangfupeng1988/p/3977924.html)
+[傻傻分不清的javascript运行机制](https://zhuanlan.zhihu.com/p/53135129)
+
+
