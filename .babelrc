@@ -1,0 +1,10 @@
+// 新建.babelrc
+{
+  "presets": [
+    [
+      "@babel/preset-env" // ES语法转换
+    ]
+    // webpack现在已经支持原生的import语句了, 并且将其运用在tree-shaking特性上
+  ],
+  "plugins": []
+}
