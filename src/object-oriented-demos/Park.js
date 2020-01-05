@@ -1,3 +1,9 @@
+// 第 二 题 
+// 某 停 车 场 ， 分 3 层 ， 每 层 100 车 位 
+// 每 个 车 位 都 能 监 控 到 车 辆 的 驶 入 和 离 开 
+// 车 辆 进 入 前 ， 显 示 每 层 的 空 余 车 位 数 量 
+// 车 辆 进 入 时 ， 摄 像 头 可 识 另 刂 车 牌 号 和 时 间 
+// 车 辆 出 来 时 ， 出 口 显 示 器 显 示 车 牌 号 和 停 车 时 长 
 
 // 车辆
 class Car {
@@ -23,8 +29,8 @@ class Screen {
 
     show(car, inTime) {
         const currentTime = Date.now();
-        console.log('车牌号' , car.carNumber);
-        console.log('停车时长' , parseInt(currentTime+400 - inTime));
+        console.log('车牌号', car.carNumber);
+        console.log('停车时长', parseInt(currentTime + 400 - inTime));
     }
 }
 
@@ -34,7 +40,7 @@ class Park {
         this.floors = floors || [];
         this.camera = new Camera();
         this.screen = new Screen();
-        
+
         this.carList = {} // 存储摄像头拍摄返回的车辆信息
     }
 

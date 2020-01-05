@@ -10,7 +10,7 @@ function loadImg(src) {
         img.onerror = () => {
             reject('图片加载失败');
         }
-        img.sec = src;
+        img.src = src;
     });
 
     return promise;

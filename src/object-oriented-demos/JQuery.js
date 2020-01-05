@@ -1,4 +1,7 @@
+
+
 class jQuery {
+
     constructor(selector) {
         let slice = Array.prototype.slice;
         let dom = slice.call(document.querySelectorAll(selector)); // call传入数组
@@ -24,9 +27,11 @@ class jQuery {
 
 window.$ = function (selector) {
     // 工厂模式
+    // 返回创建好的实例
     return new jQuery(selector);
 }
 
+// 测试
 var $p = $('p');
 console.log($p);
 console.log($p.addClass)
