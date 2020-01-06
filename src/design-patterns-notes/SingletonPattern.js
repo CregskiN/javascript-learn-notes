@@ -1,13 +1,5 @@
 
 
-// // 存储实例
-// class InstanceStorage {
-//     constructor(instance) {
-//         this.instance = instance;
-//     }
-// }
-
-
 // 创建单例
 class SingleObject {
 
@@ -17,16 +9,19 @@ class SingleObject {
 
 }
 
+// 这里的语法可以存储状态 instance
+// 立即执行函数 设置SingleObject
 SingleObject.getInstance = (() => {
     let instance = null;
     return ()=>{
         if(!instance){
             instance = new SingleObject();
-            return instance;
+            
         }
-        throw ('请勿重复创建实例！');
+        return instance;
+        // throw ('请勿重复创建实例！');
     }
-})()
+})();
 
 
 module.exports = {
@@ -42,3 +37,5 @@ module.exports = {
 
 // const obj2 = SingleObject.getInstance()
 // obj2.login()
+
+// console.log(obj1 === obj2); // true

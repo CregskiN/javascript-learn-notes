@@ -16,7 +16,8 @@ class Target {
     }
 
     request() {
-        // 返回特定接口的实例 // 类似工厂模式
+        // 返回特定接口调用的结果
+        // 类似工厂模式 ! 但工厂模式返回实例，适配器模式调用特定接口，返回结果
         let info = this.adaptee.specificRequest();
         return `${info} - 转换器 - 中国标准插头`
     }
