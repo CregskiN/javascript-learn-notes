@@ -9,6 +9,8 @@ class SingleObject {
 
 }
 
+//@@ !! 使用闭包保存instance??? //
+
 // 这里的语法可以存储状态 instance
 // 立即执行函数 设置SingleObject
 SingleObject.getInstance = (() => {
