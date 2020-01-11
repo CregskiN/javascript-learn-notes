@@ -4,7 +4,7 @@
 npm init -y # npm初始化
 npm install webpack webpack-cli --save-dev # 安装webpack webpack-cli
 npm install webpack-dev-server html-webpack-plugin --save-dev # 安装webpack-dev-server webpackPlugin:html-webpack-plugin
-
+npm install core-decorators # 装饰器库
 ```
 ### 单例模式
 使用立即执行函数 + 闭包保存instance

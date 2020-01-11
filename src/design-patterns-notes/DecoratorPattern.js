@@ -105,40 +105,23 @@
 // // };
 
 
-// 打印日志
-// function log(target, name, descriptor) {
-//     let oldValue = descriptor.value;
-//     descriptor.value = function () {
-//         console.log(`calling ${name} width ${arguments}`);
-//         return oldValue.apply(this.atguments);
-//     }
-// }
+
+function log(target, name, descriptor) {
+    let oldValue = descriptor.value;
+    descriptor.value = function () {
+        console.log(`calling ${name} width ${arguments}`);
+        return oldValue.apply(this.atguments);
+    }
+}
 
 
-// class Math {
-//     @log
-//     add(a, b) {
-//         return a + b;
-//     }
-// }
+class Math {
+    @log
+    add(a, b) {
+        return a + b;
+    }
+}
 
-// let math = new Math();
-// const result = math.add(2, 4);
+let math = new Math();
+const result = math.add(2, 4);
 
-// core-decorator
-// 只读装饰器
-// import {readonly} from 'core-decorators';
-// class Person {
-//     @readonly
-//     name(){
-//         return 'zhang san'
-//     }
-// }
-
-// let p = new Person();
-// console.log(p.name());
-// p.name = function (){
-
-// }
-
-// 描述装饰器
